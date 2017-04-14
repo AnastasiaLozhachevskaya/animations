@@ -1,0 +1,201 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', Arial;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #540404;
+}
+
+button:focus, button:active {
+	outline: 0;
+}
+
+body.overflow {
+	overflow: hidden;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin-bottom: 40px; 
+	position: relative;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section.pink {
+	background-color: #df3695;
+	color: #fff;
+}
+
+h2 {
+	margin: 0 0 40px;
+	font-weight: 800;
+	font-size: 34px;
+}
+
+.container {
+	width: 920px;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	margin-right: 50px; 
+}
+
+.left-column {
+	width: 65%;
+	float: left;
+	margin-right: 50px;
+}
+
+header {
+	padding: 15px 0;
+	position: relative;
+	z-index: 200;
+}
+
+header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.menu a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #540404;
+	font-weight: 600;
+}
+
+.mob-menu {
+	float: right;
+    color: inherit;
+    font-size: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.menu {
+	position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.menu.active {
+	display: block;
+}
+
+
+.button-container {
+	margin-top: 40px;
+}
+
+.btn {
+	border: 0;
+	background-color: #673ab7;
+	border-radius:5px;
+	color: #fff;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #4d2c88;
+	color: #cecdcd;
+}
+
+.modal-overlay {
+	background-color: rgba(135, 22, 137, 0.79);;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.modal {
+	position: fixed;
+    height: 375px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    z-index: 10;
+    width: 320px;
+    padding: 25px;
+}
+
+.modal-close {
+	position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 42px;
+    color: #540404;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-heading {
+	margin: 0 0 40px;
+	text-align: center;
+}
+
+.modal button {
+	display: block;
+	margin:  0 auto;
+}
+
+.form-input {
+	display: block;
+	width: calc(100% - 32px);
+	border-radius: 3px;
+	border: 1px solid #9e8f8f;
+	padding: 15px 15px;
+	position: absolute;
+}
+
+.form-input:focus{
+	box-shadow: 0px 0px 3px 0px #ab6d6d;
+    outline: 0;
+}
+
+.form-label {
+	position: relative;
+    font-size: 16px;
+    line-height: 45px;
+    font-weight: 800;
+    padding-left: 15px;
+    color: #ab6d6d; 
+    display: block;
+	cursor: text;
+}
+
+
+.modal-overlay, .modal {
+	display: none;
+} 
+
+.modal-overlay.active, .modal.active {
+	display: block;
+} 
+
+

@@ -1,0 +1,23 @@
+@keyframes darken {
+  0%, 100% {fill: auto  }
+  50% {fill: #BD6C8C  }
+}
+
+#icing-fill, #icing-shadow {
+  animation: darken 3s infinite
+}
+
+
+https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/
+
+http://cubic-bezier.com
+
+https://developer.mozilla.org/ru/docs/Web/CSS/transition-timing-function
+
+(steps)
+http://codepen.io/stephengreig/pen/tuvfp/
+
+https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%B2%D0%B0%D1%8F_%D0%91%D0%B5%D0%B7%D1%8C%D0%B5
+
+
+http://pleeease.io/

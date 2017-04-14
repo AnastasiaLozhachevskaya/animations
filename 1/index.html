@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Doc</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="./css.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="mob-menu">
+				&#9776;
+			</div>
+		</div>
+	</header>
+	<nav class="menu">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Register</a>
+		<a href="#">Contacts</a>
+	</nav>
+	<section class="pink">
+		<div class="container">
+			<h2>Lorem ipsum dolor sit amet</h2>
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, earum pariatur minima ratione, repellat laudantium tempora, provident assumenda neque animi ea, omnis excepturi. Animi sit praesentium reprehenderit, voluptates et neque!
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, earum pariatur minima ratione, repellat laudantium tempora, provident assumenda neque animi ea, omnis excepturi. Animi sit praesentium reprehenderit, voluptates et neque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, earum pariatur minima ratione, repellat laudantium tempora, provident assumenda neque animi ea, omnis excepturi. Animi sit praesentium reprehenderit, voluptates et neque!
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, earum pariatur minima ratione, repellat laudantium tempora, provident assumenda neque animi ea, omnis excepturi. Animi sit praesentium reprehenderit, voluptates et neque!
+				</p>
+			</div>
+			<div class="button-container">
+				<button id="init-popup" type="button" class="btn btn-primary">
+					<span class="top content">Buy it now!</span>
+					<span class="bottom content">99$ sale!</span>
+				</button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<h2>Lorem ipsum dolor sit amet</h2>
+			<div class="left-column">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, earum pariatur minima ratione, repellat laudantium tempora, provident assumenda neque animi ea, omnis excepturi. Animi sit praesentium reprehenderit, voluptates et neque!
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, earum pariatur minima ratione, repellat laudantium tempora, provident assumenda neque animi ea, omnis excepturi. Animi sit praesentium reprehenderit, voluptates et neque!
+				</p>
+			</div>
+			<div class="sweetlandia">
+				<img id="sweetlandia" src="img/sweetlandia.png" alt="">
+			</div>
+		</div>
+	</section>
+	<div class="modal-overlay"></div>
+	<div class="modal">
+		<span class="modal-close">&times;</span>
+		<h3 class="modal-heading">Contact us!</h3>
+		<div class="modal-container">
+			<form action="">
+				<fieldset>
+					<input class="form-input" id="name" type="text">
+					<label class="form-label" for="name">Your name</label>
+				</fieldset>
+				<fieldset>
+					<input class="form-input" id="email" type="text">
+					<label class="form-label" for="email">Your e-mail</label>
+				</fieldset>
+				<fieldset>
+					<input class="form-input" id="phone" type="text">
+					<label class="form-label" for="phone">Your phone</label>
+				</fieldset>
+				<button class="btn btn-primary" type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#init-popup').click(function () {
+				$('.modal-overlay, .modal').addClass('active');
+				$('body').addClass('overflow');
+			})
+
+			$('.modal-overlay, .modal-close').click(function () {
+				$('.modal-overlay, .modal').removeClass('active');		
+				$('body').removeClass('overflow');
+			})
+
+			$('.mob-menu').click(function () {
+				// $('.menu').toggleClass('fade');
+				$('.menu').toggleClass('slide');
+			})
+		})
+	</script>
+</body>
+</html>
